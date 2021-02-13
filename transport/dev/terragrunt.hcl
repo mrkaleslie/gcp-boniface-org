@@ -16,10 +16,19 @@ dependency "folder" {
     id = "folders/123456"
   }
 }
+
+terraform {
+  source = "../..//modules/vpc"
+}
+
 include {
   path = find_in_parent_folders()
 }
 
 inputs = {
-  name = "dev"
+  parent = dependency.folder.outputs.id
+  org = "bon"
+  name = "transport-dev"
+  subnets = []
+  shared_vpc_host = false
 }
