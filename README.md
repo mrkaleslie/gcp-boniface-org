@@ -13,6 +13,14 @@
 
 ### **bonifaceltd.com	1077773425109**
 
+### 2: users + groups
 
+| Group Name           | Email                          | Description                                                                                                                                                                            |
+|----------------|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| org-admins     | org-admins@bonifaceltd.com     | Organization administrators are responsible for organizing the structure of the resources used by the organization.                                                                    |
+| net-admins     | net-admins@bonifaceltd.com     | Network administrators are responsible for creating networks, subnets, firewall rules, and network devices such as cloud routers, Cloud VPN instances, and load balancers.             |
+| billing-admins | billing-admins@bonifaceltd.com | Billing administrators are responsible for setting up billing accounts and monitoring their usage.                                                                                     |
+| sec-admins     | sec-admins@bonifaceltd.com     | Security administrators are responsible for establishing and managing security policies for the entire organization, including access management and organization constraint policies. |
+| devops         | devops@bonifaceltd.com         | DevOps practitioners create or manage end-to-end pipelines that support continuous integration and delivery, monitoring, and system provisioning.                                      |
+| devs           | devs@bonifaceltd.com           | Developers are responsible for designing, coding, and testing applications.                                                                                                            |
 
-### users + groups
