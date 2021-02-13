@@ -11,6 +11,6 @@ include {
 }
 
 inputs = {
-  name = "transport"
+  name   = "transport"
   parent = "organizations/1077773425109"
 }

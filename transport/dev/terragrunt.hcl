@@ -7,7 +7,7 @@ dependencies {
 }
 
 dependency "folder" {
-  config_path = "../folder"
+  config_path                             = "../folder"
   mock_outputs_allowed_terraform_commands = ["validate", "plan"]
   mock_outputs = {
     id = "folders/123456"
@@ -23,9 +23,9 @@ include {
 }
 
 inputs = {
-  parent = dependency.folder.outputs.id
-  org = "bon"
-  name = "transport-dev"
-  subnets = []
+  parent          = dependency.folder.outputs.id
+  org             = "bon"
+  name            = "transport-dev"
+  subnets         = []
   shared_vpc_host = false
 }
