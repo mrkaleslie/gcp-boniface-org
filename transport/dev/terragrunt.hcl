@@ -18,7 +18,7 @@ dependency "folder" {
 }
 
 terraform {
-  source = "../..//modules/vpc"
+  source = "../..//modules/transport"
 }
 
 include {
