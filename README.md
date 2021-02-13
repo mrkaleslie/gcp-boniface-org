@@ -39,3 +39,12 @@
 | Security Center     | Security Center Admin             |
 | Support             | Support Account Administrator     |
 
+### 4: Setting up billing
+
+> Grant billing admin access to billing-admins
+
+| IAM area         | Role to assign                |
+|------------------|-------------------------------|
+| Billing          | Billing Account Administrator |
+| Billing          | Billing Account Creator       |
+| Resource Manager | Organization Viewer           |
