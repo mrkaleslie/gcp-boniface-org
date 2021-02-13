@@ -41,10 +41,37 @@
 
 ### 4: Setting up billing
 
+#### Set up billing account
+
+At this point terraform takes ownership
+---
+
+run [/bootstrap](./bootstrap)
+
+[![asciicast](https://asciinema.org/a/Wfi0wVP7RSLipFYJurxdhwd6A.svg)](https://asciinema.org/a/Wfi0wVP7RSLipFYJurxdhwd6A?t=3)
+
 > Grant billing admin access to billing-admins
 
 | IAM area         | Role to assign                |
 |------------------|-------------------------------|
 | Billing          | Billing Account Administrator |
 | Billing          | Billing Account Creator       |
-| Resource Manager | Organization Viewer           |
+
+### 5: Setting up terraform core
+
+- terraform project under the organisation
+
+- houses "terraform states" bucket
+
+- terraform service account
+
+```
+Apply complete! Resources: 40 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+bucket = bon-terraform-state
+project = bon-terraform-007-fbf5
+svc_account = org-terraform@bon-terraform-007-fbf5.iam.gserviceaccount.com
+```
+---
