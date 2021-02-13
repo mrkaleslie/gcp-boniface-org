@@ -24,3 +24,18 @@
 | devops         | devops@bonifaceltd.com         | DevOps practitioners create or manage end-to-end pipelines that support continuous integration and delivery, monitoring, and system provisioning.                                      |
 | devs           | devs@bonifaceltd.com           | Developers are responsible for designing, coding, and testing applications.                                                                                                            |
 
+### 3: Setting up administrator access
+
+> Grant admin access to org-admins
+
+| IAM area            | Role assigned                     |
+|---------------------|-----------------------------------|
+| Resource Manager    | Organization Administrator        |
+| Resource Manager    | Folder Admin                      |
+| Resource Manager    | Project Creator                   |
+| Billing             | Billing Account User              |
+| Roles               | Organization Role Administrator   |
+| Organization Policy | Organization Policy Administrator |
+| Security Center     | Security Center Admin             |
+| Support             | Support Account Administrator     |
+
