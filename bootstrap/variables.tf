@@ -1,0 +1,1 @@
+variable "org" { type = string }
