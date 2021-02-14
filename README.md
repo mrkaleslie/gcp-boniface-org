@@ -1,5 +1,6 @@
 # GCP-Boniface-ORG ![Plan Boniface GCP Org](https://github.com/mrkaleslie/gcp-boniface-org/workflows/Plan%20Boniface%20GCP%20Org/badge.svg)
 
+
 ![org-diagram](./Org-Diagram.png)
 
 ## Setting up Organization
