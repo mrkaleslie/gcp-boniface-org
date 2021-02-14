@@ -45,7 +45,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
       - name: 'Terragrunt Plan'
-        uses: the-commons-project/terragrunt-github-actions@1.0.3
+        uses: the-commons-project/terragrunt-github-actions@1.0.4
         with:
           tf_actions_version: ${{ env.tf_version }}
           tg_actions_version: ${{ env.tg_version }}
