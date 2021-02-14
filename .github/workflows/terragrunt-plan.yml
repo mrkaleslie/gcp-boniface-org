@@ -13,7 +13,6 @@ jobs:
     name: 'Terragrunt'
     runs-on: ubuntu-latest
     steps:
-      - continue-on-error: true
       - name: 'Checkout'
         uses: actions/checkout@master
       - name: 'Auth terrafrom svc account'
@@ -46,6 +45,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
       - name: 'Terragrunt Plan 1.0.0'
+        continue-on-error: true
         uses: the-commons-project/terragrunt-github-actions@1.0.0
         with:
           tf_actions_version: ${{ env.tf_version }}
@@ -57,6 +57,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
       - name: 'Terragrunt Plan1.0.1'
+        continue-on-error: true
         uses: the-commons-project/terragrunt-github-actions@1.0.1
         with:
           tf_actions_version: ${{ env.tf_version }}
@@ -68,6 +69,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
       - name: 'Terragrunt Plan 1.0.2'
+        continue-on-error: true
         uses: the-commons-project/terragrunt-github-actions@1.0.2
         with:
           tf_actions_version: ${{ env.tf_version }}
@@ -79,6 +81,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
       - name: 'Terragrunt Plan 1.0.3'
+        continue-on-error: true
         uses: the-commons-project/terragrunt-github-actions@1.0.3
         with:
           tf_actions_version: ${{ env.tf_version }}
@@ -90,6 +93,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
       - name: 'Terragrunt Plan 1.0.4'
+        continue-on-error: true
         uses: the-commons-project/terragrunt-github-actions@1.0.4
         with:
           tf_actions_version: ${{ env.tf_version }}
@@ -101,6 +105,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
       - name: 'Terragrunt Plan 1.0.5'
+        continue-on-error: true
         uses: the-commons-project/terragrunt-github-actions@1.0.5
         with:
           tf_actions_version: ${{ env.tf_version }}
