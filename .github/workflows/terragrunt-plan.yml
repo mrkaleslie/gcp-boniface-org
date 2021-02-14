@@ -13,6 +13,7 @@ jobs:
     name: 'Terragrunt'
     runs-on: ubuntu-latest
     steps:
+      - continue-on-error: true
       - name: 'Checkout'
         uses: actions/checkout@master
       - name: 'Auth terrafrom svc account'
@@ -44,8 +45,63 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
-      - name: 'Terragrunt Plan'
+      - name: 'Terragrunt Plan 1.0.0'
+        uses: the-commons-project/terragrunt-github-actions@1.0.0
+        with:
+          tf_actions_version: ${{ env.tf_version }}
+          tg_actions_version: ${{ env.tg_version }}
+          tf_actions_subcommand: 'plan'
+          tf_actions_working_dir: ${{ env.tf_working_dir }}
+          tf_actions_comment: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
+      - name: 'Terragrunt Plan1.0.1'
+        uses: the-commons-project/terragrunt-github-actions@1.0.1
+        with:
+          tf_actions_version: ${{ env.tf_version }}
+          tg_actions_version: ${{ env.tg_version }}
+          tf_actions_subcommand: 'plan'
+          tf_actions_working_dir: ${{ env.tf_working_dir }}
+          tf_actions_comment: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
+      - name: 'Terragrunt Plan 1.0.2'
+        uses: the-commons-project/terragrunt-github-actions@1.0.2
+        with:
+          tf_actions_version: ${{ env.tf_version }}
+          tg_actions_version: ${{ env.tg_version }}
+          tf_actions_subcommand: 'plan'
+          tf_actions_working_dir: ${{ env.tf_working_dir }}
+          tf_actions_comment: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
+      - name: 'Terragrunt Plan 1.0.3'
+        uses: the-commons-project/terragrunt-github-actions@1.0.3
+        with:
+          tf_actions_version: ${{ env.tf_version }}
+          tg_actions_version: ${{ env.tg_version }}
+          tf_actions_subcommand: 'plan'
+          tf_actions_working_dir: ${{ env.tf_working_dir }}
+          tf_actions_comment: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
+      - name: 'Terragrunt Plan 1.0.4'
         uses: the-commons-project/terragrunt-github-actions@1.0.4
+        with:
+          tf_actions_version: ${{ env.tf_version }}
+          tg_actions_version: ${{ env.tg_version }}
+          tf_actions_subcommand: 'plan'
+          tf_actions_working_dir: ${{ env.tf_working_dir }}
+          tf_actions_comment: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.TF_GCP_SA_KEY }}
+      - name: 'Terragrunt Plan 1.0.5'
+        uses: the-commons-project/terragrunt-github-actions@1.0.5
         with:
           tf_actions_version: ${{ env.tf_version }}
           tg_actions_version: ${{ env.tg_version }}
