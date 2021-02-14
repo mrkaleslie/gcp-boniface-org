@@ -1,7 +1,3 @@
-locals {
-
-}
-
 terraform {
   source = "../..//modules/folder"
 }

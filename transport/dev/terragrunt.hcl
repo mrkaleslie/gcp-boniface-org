@@ -1,7 +1,3 @@
-locals {
-
-}
-
 dependencies {
   paths = ["../folder"]
 }
@@ -23,8 +19,8 @@ include {
 }
 
 inputs = {
-  parent          = dependency.transport_folder.outputs.id
-  org             = "bon"
-  name            = "transport-dev"
-  subnets         = []
+  parent  = dependency.transport_folder.outputs.id
+  org     = "bon"
+  name    = "transport-dev"
+  subnets = []
 }

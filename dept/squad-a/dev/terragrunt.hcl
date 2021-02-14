@@ -34,8 +34,8 @@ include {
 }
 
 inputs = {
-  parent          = dependency.squad_folder.outputs.id
-  org             = "bon"
-  name            = "dept-squad-a-dev"
-  subnets         = []
+  parent  = dependency.squad_folder.outputs.id
+  org     = "bon"
+  name    = "dept-squad-a-dev"
+  subnets = []
 }

@@ -1,7 +1,3 @@
-locals {
-
-}
-
 dependencies {
   paths = ["../folder"]
 }
