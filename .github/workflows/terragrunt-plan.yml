@@ -21,7 +21,7 @@ jobs:
           service_account_key: ${{ secrets.TF_GCP_SA_KEY }}
           export_default_credentials: true
       - name: 'Terragrunt Format'
-        uses: the-commons-project/terragrunt-github-actions@1.0.5
+        uses: the-commons-project/terragrunt-github-actions@1.0.6
         with:
           tf_actions_version: ${{ env.tf_version }}
           tg_actions_version: ${{ env.tg_version }}
@@ -42,8 +42,18 @@ jobs:
           tf_actions_comment: true
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      - name: 'Terragrunt Init'
+        uses: the-commons-project/terragrunt-github-actions@1.0.6
+        with:
+          tf_actions_version: ${{ env.tf_version }}
+          tg_actions_version: ${{ env.tg_version }}
+          tf_actions_binary: 'terraform'
+          tf_actions_subcommand: 'init'
+          tf_actions_working_dir: ${{ env.tf_working_dir }}
+          tf_actions_comment: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
       - name: 'Terragrunt Plan'
-        continue-on-error: true
         uses: the-commons-project/terragrunt-github-actions@1.0.6
         with:
           tf_actions_version: ${{ env.tf_version }}
