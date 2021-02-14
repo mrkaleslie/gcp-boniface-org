@@ -4,7 +4,7 @@ on:
   - pull_request
 
 env:
-  tf_version: 'latest'
+  tf_version: '0.13.6'
   tg_version: 'latest'
   tf_working_dir: '.'
 
