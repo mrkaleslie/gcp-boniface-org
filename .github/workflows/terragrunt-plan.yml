@@ -4,8 +4,8 @@ on:
   - pull_request
 
 env:
-  tf_version: '0.12.18'
-  tg_version: '0.21.10'
+  tf_version: 'latest'
+  tg_version: 'latest'
   tf_working_dir: '.'
 
 jobs:
