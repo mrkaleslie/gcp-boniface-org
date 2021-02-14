@@ -6,5 +6,5 @@ module "vpc" {
     routing_mode = "GLOBAL"
     subnets      = var.subnets
 
-    shared_vpc_host = false
+    shared_vpc_host = true
 }
